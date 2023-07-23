@@ -1,0 +1,543 @@
+
+/*ecran Pc*/
+
+body
+{
+    max-width: 1440px;
+    width: 100%;
+    min-width: 500px;
+    margin: 0px;
+    background-image: url(/IMG/divers/backgroundtotal.jpeg);
+    
+}
+
+.raccourcis
+{
+    
+    background-color: #00000046;
+    width: 65%;
+    border-radius: 20px;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    z-index: 1;
+    display: flex;
+    backdrop-filter: blur(20px);
+
+}
+
+
+
+.raccourcis a
+{
+    width: auto;
+   font-size: 15px;
+   padding: 10px;
+   text-align: center;
+   color: white;
+   transition: all ease-in-out 100ms;
+   &:hover
+   {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+   }
+
+
+}
+
+.trayon
+{
+    margin-top: 230px; 
+    width: 100%;
+}
+
+/*debut  rayon*/
+.allrayon
+{
+    
+    
+    border-radius: 60px;
+    margin-top: 30px;
+    /*border: 2px solid blue;*/
+    display: flex;
+    flex-direction: column ;
+    
+    transition: 500ms ALL EASE;
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+    &:hover 
+    {
+        margin-top: 230px;
+        transform: scale(1.02);
+        margin-bottom: 40px;
+    }
+}
+/*FIN rayon*/
+
+/*fin ecran pc*/
+
+
+
+
+/*debut sous rayon1*/
+.ul1
+{
+    display: flex; 
+    list-style: none;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    ;
+    
+}
+/*FIN  sous rayon1*/
+
+/*debut sous rayon2*/
+.ul2
+{
+    margin-top: 2%;
+    
+    display: flex; 
+    flex-wrap: wrap;
+    list-style: none;
+   
+    height: auto;
+    justify-content: space-around;
+    
+}
+/*fin sous rayon2*/
+
+/*debut carte*/
+li
+{
+    
+    padding-right: 50px;
+    padding-left:  50px; 
+    padding-bottom: 20px;
+
+}
+/*fin carte*/
+
+a
+{
+    text-decoration: none;
+}
+
+.container
+{
+    background-color: #03040533;
+    /*border: solid black 5px;*/
+    border-radius: 30px;
+    margin-top: 70px;
+    padding-left: 1%;
+    padding-right: 1%;
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 10ms ease-in-out;
+    &:hover
+    {
+        backdrop-filter: blur(20px);
+    }
+}
+
+.prayon
+{
+    text-align: center;
+    /*color: aliceblue;*/
+    align-items: center;
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 30px;
+    font-family: ;
+    
+    
+}
+
+/*box de la carte*/
+.carte
+{
+    width: 300px ;
+    height: 550PX;
+    background-image: url(/IMG/divers/backgroundcarte.jpeg); 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-top: 40px;
+    transition: 500ms ALL EASE;
+    &:hover
+    {
+        transform: scale(1.12);
+        margin-top: 20px;
+        margin-bottom: 40px;
+        box-shadow: 15px 15px 5px  rgba(71, 63, 63, 0.61);
+        align-items: center;
+        z-index: 999; 
+    }
+}
+
+/*Titre pour le produit sur la carte*/
+.produit
+{
+    color: black;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+/*image sur la carte*/
+.imgp
+{
+    margin-top: 20%;
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+}
+
+
+
+/* box dans la carte*/
+.detail
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0%;
+}
+
+/*information dans la carte*/
+.h2
+{
+    color: black;
+    text-align: center;
+    font-weight: 900;
+    font-size: 70px;
+}
+
+/* sous box de la box detail*/
+.sub
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+/* image de la box sub*/
+.en
+{
+    border-radius: 40px;
+    height: 60px;
+    width: 140px;
+    margin-top: 70%;
+    left: -06px;
+    transition: 100s ALL ease-in-out;
+    &:hover + .desc
+    {
+        transform: scale(1.03);
+        
+        display: block;
+        
+    }  
+}
+
+/* sous box de la box sub*/
+.desc
+{
+    align-items: center;
+    border-radius: 30px;
+    width: 500px;
+    height:500px ;
+    margin: 70px;
+    /*background-color: black;*/
+    z-index: 2 ;
+    display: none;
+    position: absolute;
+    
+    &:hover
+    {
+        display: block; 
+        backdrop-filter: blur (20px);
+        box-shadow: 15px 15px 5px  rgba(71, 63, 63, 0.61);
+    }
+}
+
+/* sous box de la box desc*/
+.desc1
+{
+ background-color: aliceblue;
+ height: auto;
+ width: auto;
+ margin: 5px;
+ border-radius: 30px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+.desc1 h1
+{
+    text-align:center;
+    font-size: 40px;
+    margin: 0%;
+}
+/* sous box de la box desc*/
+.desc1-1
+{
+    justify-items: baseline;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*background-color: rgb(28, 141, 240);*/
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+    
+}
+
+/*box dans dans la box desc1-1 pour slider/slide/image */
+.slider
+{
+   overflow: hidden;
+   border-radius: 30px;
+}
+
+
+/*box dans dans la box slider pour image */
+.slides
+{
+    height: 200px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+/*image dans la box slides*/
+.slide
+{
+    height: 200px;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+    animation: glisse 15s infinite;
+}
+
+/*animation des images dans la box slides*/
+@keyframes glisse
+{
+    0% {
+        transform: translatey(-0px);
+    }
+    15% {
+        transform: translatey(-200px);
+    }
+    40% {
+        transform: translatey(-400px);
+    }
+    65% {
+        transform: translatey(-600px);
+    }
+    100% {
+        transform: translatey(-800px);
+    }
+    
+}
+
+
+
+/* sous box de la box desc1-1*/
+.desc1-1-2
+{
+background-color: rgb(204, 19, 111);
+ height: 100%;
+ width: 100%;
+ margin: 5px;
+ border-radius: 30px;
+}
+/* image de la box desc1-1-1 pour whatsap*/
+.wha
+{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    width: 130px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    transition: 1S ALL EASE;
+    &:hover
+    {
+        transform: scale(1.10);
+        margin: 10px;
+    }
+}
+
+/* sous box de la box desc*/
+.desc2
+{
+    /*background-color: rgb(241, 104, 35);*/
+    background-image: url(/IMG/divers/backgroundtotal.jpeg);
+    height: 60%;
+    width: auto;
+    border-radius: 30px;
+    margin: 10px; 
+    justify-content: space-around;
+    
+}
+ 
+.desc2 h1
+{
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 0%;
+    color: rgb(0, 0, 0);
+    font-size: 25px; 
+}
+
+.desc2 p
+{
+    text-align: justify;
+    padding: 5px;
+    margin-top: 0.01%;
+    color: rgb(0, 0, 0);
+    font-size: 20px; 
+}
+
+ /*fin ecran pc*/
+
+
+
+/*debut ecran tablette*/
+@media (max-width: 768px)
+{
+    body
+    {
+        max-width: 768px;
+        width: 100%;
+        min-width: 50px;
+        margin: 0px;
+        
+    }
+    
+    .raccourcis
+    {
+        width: 65%;    
+    }
+    
+    .trayon
+    {
+        margin-top: 230px; 
+        width: 100%;
+    }
+    
+    /*debut  rayon*/
+    .allrayon
+    {
+        width: 100%;
+        min-width: 400px;
+    }
+    /*FIN rayon*/  
+    
+    .container
+    {
+        height:auto;
+        width: 100%;
+    }
+   
+}
+
+/*fin ecran tablette*/
+
+
+/*debut ecran phone*/
+
+@media (max-width: 425px)
+{
+    body
+    {
+        max-width: 425px;
+        width: 100%;
+        min-width: 50px;
+        margin: 0px;
+        
+    }
+    
+    .raccourcis
+    {
+        width: 75%;    
+    }
+    
+    .trayon
+    {
+        margin-top: 230px; 
+        width: 100%;
+    }
+    
+    /*debut  rayon*/
+    .allrayon
+    {
+        width: 100%;
+        min-width: 40px;
+    }
+    /*FIN rayon*/  
+    
+    .container
+    {
+        height:auto;
+        width: 100%;
+    }
+
+    /* sous box de la box sub*/
+    .desc
+    {
+        
+        max-width: 400px;
+        width: 100%;
+        height:700px ;
+    }
+
+    /* sous box de la box desc*/
+
+    /* image de la box desc1-1-1 pour whatsap*/
+    .wha
+    {
+    
+        position: relative; 
+        top: -120px;
+        left: 160px;
+    } 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
